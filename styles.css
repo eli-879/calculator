@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin:auto;
+    margin-top: 128px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 16px;
+    background-color: #474448;
+    padding: 32px;
+    width: 480px;
+    height: auto;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    justify-content: center;
+    
+}
+
+.screen {
+    display: block;
+    border-style: solid;
+    height: auto;
+    padding: 8px;
+    background-color: #F1F0EA;
+    margin-bottom: 30px;
+}
+
+.stored-calc, .current-num {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.stored-calc {
+    min-height: 19px;
+}
+
+.current-num {
+    height: 100%;
+    min-height: 73px;
+    word-wrap: break-word;
+}
+
+.expression, .number{
+    margin: 0 0 0 auto;
+}
+
+.number {
+    text-align: right;
+    width: 100%;
+    font-size: 64px;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.row-0, .row-1, .row-2, .row-3, .row-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 100%;
+}
+
+.button-number, .button-operator, .button-equals, .button-decimal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    height: 100px;
+    width: 100px;
+    background-color: #E0DDCF;
+}
+
+.button-del, .button-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 12px;
+    height: 100px;
+    width: 210px;
+    background-color: #E0DDCF;
+}
+
+.button-number:hover, .button-del:hover, .button-clear:hover, .button-operator:hover, .button-equals:hover, .button-decimal:hover {
+    background-color: lightgray;
+}
+
+.button:active, .button-del:active, .button-clear:active, .button-equals:active, .button-decimal:active {
+    background-color: darkgray;
+}
